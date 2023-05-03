@@ -1,1 +1,94 @@
 /* Write your CSS code here */
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.nav-logout {
+  width: 25px;
+  height: 25px;
+}
+.web-logo {
+  width: 100px;
+  height: 30px;
+}
+
+.nav-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e6f6ff;
+  width: 100%;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+.navbar-lg-container {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .logo-container {
+    display: none;
+  }
+  .nav-icon-container {
+    display: none;
+  }
+  .navbar-lg-container {
+    display: flex;
+    width: 79%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .web-logo {
+    width: 180px;
+    height: 45px;
+    padding-left: 10px;
+  }
+
+  .nav-links-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+  }
+  .logout-button {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #1577f8;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .link {
+    font-family: 'Bree Serif';
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
