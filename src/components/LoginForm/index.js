@@ -35,6 +35,7 @@ class LoginForm extends Component {
           onChange={this.onChangeUserName}
           id="username"
           value={username}
+          placeholder="Username"
         />
       </>
     )
@@ -54,6 +55,7 @@ class LoginForm extends Component {
           onChange={this.onChangePassword}
           id="password"
           value={password}
+          placeholder="Password"
         />
       </>
     )
@@ -61,7 +63,7 @@ class LoginForm extends Component {
 
   onSubmitSuccess = () => {
     const {history} = this.props
-    history.push('/')
+    history.replace('/')
   }
 
   onSubmitFailure = error => {
@@ -105,7 +107,7 @@ class LoginForm extends Component {
         <div className="login-card">
           <img
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-            alt="website-logo"
+            alt="website logo"
             className="website-logo"
           />
           <img
