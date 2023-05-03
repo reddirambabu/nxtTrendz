@@ -1,1 +1,85 @@
 /* Write your CSS code here */
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.responsive-container {
+  padding: 15px;
+}
+
+.body-main-heading {
+  font-family: 'Roboto';
+  font-size: 34px;
+  color: #1e293b;
+  font-weight: bold;
+}
+.clothes-lg-image {
+  display: none;
+}
+
+.body-description {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #626366;
+  /* font-weight: 200; */
+}
+
+.clothes-image {
+  width: 75%;
+}
+
+.shop-button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #1577f8;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .clothes-lg-image {
+    display: flex;
+    width: 400px;
+  }
+  .clothes-image {
+    display: none;
+  }
+  .body-lg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+  }
+  .body-main-heading {
+    font-size: 48px;
+  }
+  .body-description {
+    font-size: 20px;
+  }
+  .body-container {
+    align-items: flex-start;
+    text-align: start;
+    width: 50%;
+  }
+
+  .responsive-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
